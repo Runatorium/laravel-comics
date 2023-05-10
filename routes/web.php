@@ -12,13 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
 
     $navData = config('headerData');
+    $dcComics = config('footer');
 
-    return view('header', compact('navData'));
-})->name('header');
-
-Route::get('/', function () {
-    return view('home');
+    return view('home', $navData, $dcComics);
 })->name('home');

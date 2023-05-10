@@ -13,7 +13,7 @@
 
     <main>
         <div>
-            @yield('content')
+            @yield('headerData')
         </div>
     </main>
 

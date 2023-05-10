@@ -3,13 +3,11 @@
         <div class="d-flex" id="headerbox">
             <div class="d-flex" id="header">
                 <div id="logoheader">
-                    <img src="../../img/dc-logo.png" alt="">
+                    <img src="{{ URL::asset('../../img/dc-logo-bg.png') }}" alt="">
                 </div>
                 <div id="nav" class="d-flex">
                     <ul>
-                        @foreach ($navData as $data)
-                            <li>{{ $data['text'] }}</li>
-                        @endforeach
+                        @yield('header')
                     </ul>
                 </div>
             </div>

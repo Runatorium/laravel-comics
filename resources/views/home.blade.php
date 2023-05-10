@@ -2,10 +2,15 @@
 
 
 @section('page-title')
-    <h1>PAGINA PRINCIPALE</h1>
+@endsection
+
+@section('headerData')
+    <img src="../img/dc-logo.png" alt="">
+    @foreach ($navData as $data)
+        <li>{{ $data['text'] }}</li>
+    @endforeach
 @endsection
 
 
 @section('content')
-    <h1>bencenuto sul sito della comics Dc</h1>
 @endsection
