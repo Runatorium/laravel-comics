@@ -7,7 +7,9 @@
                 </div>
                 <div id="nav" class="d-flex">
                     <ul>
-                        <li @foreach ($navData as $item) @endforeach>{{}}</li>
+                        @foreach ($navData as $data)
+                            <li>{{ $data['text'] }}</li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

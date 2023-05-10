@@ -16,7 +16,7 @@ Route::get('/', function () {
 
     $navData = config('headerData');
 
-    return view('header');
+    return view('header', compact('navData'));
 })->name('header');
 
 Route::get('/', function () {
